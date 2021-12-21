@@ -1,0 +1,511 @@
+<html lang="en"><head><script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <style>
+      @import url('https://fonts.googleapis.com/css2?family=Sen:wght@700&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+  #roundred{
+       
+       border: 5px solid red;
+       width: 490px;
+       word-wrap: break-word;
+       overflow: auto;
+      
+       
+    }
+    #roundlogo
+    {
+      
+       width: 490px;
+         
+       padding: 5px;
+       font: 24px/36px sans-serif;
+       word-wrap: break-word;
+       overflow: auto;;
+ 
+    }
+    #roundana
+    {
+     
+     background-color:#d8f3fc;
+ 
+       border: 5px solid rgba(1, 119, 173, 0.979);
+       width: 490px;
+     
+       
+    }
+ 
+     #roundfb{
+       border-radius: 10px;
+       border: 5px solid #3b5998;
+       width: 480px;
+  
+    }
+     #roundtw{
+       border-radius: 10px;
+       border: 5px solid #00acee;
+       width: 480px;
+  
+    }
+ ::-webkit-scrollbar {
+       width: 12px;
+       height: 5px;
+ }
+ ::-webkit-scrollbar-track {
+       border: 1px solid #e1e3e6;
+       border-radius: 15px;
+ }
+ ::-webkit-scrollbar-thumb {
+       background: #e1e3e6;  
+       border-radius: 20px;
+ }
+ 
+ html,body{
+    margin:0;
+    height:100%;
+}
+ 
+    
+  
+  </style>
+ </head>
+ <body style="background-size: 100% 100%; background-color: rgb(255, 255, 255); " onload="printy({{fb_chart}},{{rd_chart}},{{tw_chart}},{{in_chart}},{{nw_chart}},{{overall_chart}})">
+     
+ <div id="piechart"></div>
+ 
+ <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+ 
+ 
+     <form>
+  
+       <table style="background-color: #ffffff;"width="100%">
+         <tbody><tr>
+             <td>
+                 <img src="./static/images/f.png" height="70" width="100%" >
+             </td>
+            
+         </tr>
+     </tbody></table>
+ 
+     <div style="text-align: center;font-family: 'Sen', sans-serif;background-color: #1a253b;color: rgb(5, 226, 255)"> <font size="40px"> OVERALL REPORT </font>   </div>
+     <table>
+ 
+ 
+ <tbody><tr>
+ 
+   <th style="background-image: linear-gradient(#081b3b, #31528c);font-family: 'Sen', sans-serif;color: rgb(0, 255, 221);font-size: 25px;">OVERALL ANALYSIS CHART</th>
+     <th style="background-image: linear-gradient(#081b3b, #31528c);font-family: 'Sen', sans-serif;color: rgb(0, 255, 221);font-size: 25px; ">OVERALL ANALYSIS REPORT</th>
+ </tr>
+       <tr>
+ <td>
+ 
+ <div class="l1" id="overall" style=" border: 5px solid #2f487c;
+ width: 738px;
+ height: 400px;  
+ padding: 5px;      
+ word-wrap: break-word;
+ overflow: auto;font-family: 'Sen', sans-serif; background-color: #1a253b;font-size: 25px;">                                   </div>   
+ </td>
+ <td>
+ 
+ <div class="l1"  style="
+ border: 5px solid #2f487c;
+ width: 738px;
+ height: 400px;  
+ padding: 5px;      
+ word-wrap: break-word;
+ overflow: auto;font-family: 'Sen', sans-serif; background-color: #1a253b;font-size: 25px;">
+   <font color="white"> {{overall_report[0]}} <br>  </font></u>
+   <u><font color="cyan"><b>{{overall_report[1]}}        </b></font></u> <br>  
+   <font color="#ff6200"> <i>{{overall_report[2]}}      </i></font> <br>  
+  <u> <font color="cyan"> <b>{{overall_report[3]}}        </b></font></u> <br>  
+   <font color="lightgreen">  {{overall_report[4]}}          </font><br>  
+   <font color="lightgreen">{{overall_report[5]}}     </font><br>  
+   <font color="lightgreen">{{overall_report[6]}} </font><br>  
+   <font color="lightgreen">{{overall_report[7]}} </font><br>  
+   <font color="lightgreen">{{overall_report[8]}} </font><br>  
+   <font color="lightgreen">{{overall_report[9]}} </font><br>  
+   <font color="lightgreen">{{overall_report[10]}} </font><br>  
+     
+ 
+  
+ </div>
+ </td>
+       </tr>
+     </tbody>
+    </table>
+     <div style="text-align: center;background-color:#0f1013c9;font-family: 'Sen', sans-serif;color: aliceblue;"> <font size="40px"> DETAILED REPORT </font>   </div><table>
+ 
+        
+   <tbody><tr>
+     <th style="background-image: linear-gradient(#242323e8, #0f1013c9);font-family: 'Sen', sans-serif;color: aliceblue;font-size: 25px;">Facebook Analysis Chart</th>
+     <th style="background-image: linear-gradient(#242323e8, #0f1013c9);font-family: 'Sen', sans-serif;color: aliceblue;font-size: 25px;"></th>
+    </th> <th style="background-image: linear-gradient(#242323e8, #0f1013c9);font-family: 'Sen', sans-serif;color: aliceblue;font-size: 25px;">Twitter Analysis Chart</th>
+   </tr>
+   <tr>
+     <td> <div class="l1" id="fbc" style="
+     
+     background-color:#aaaaaa25;
+       border: 5px solid #0f1013c9;
+       width: 485px;
+       height: 300px;  
+       padding: 5px;      
+       word-wrap: break-word;
+       overflow: auto;">                                 </div>                </td>
+
+
+<td> <div class="l1" id="roundlogo" style="font-family: 'Sen', sans-serif;height: 300px;background-image:url('./static/images/bn2.png');background-size: 100% 100%;">
+   </div> </td>
+
+
+
+
+     
+     <td> <div id="twc" class="l1" style="
+       background-color:#aaaaaa25;
+       border: 5px solid #0f1013c9;
+       width: 485px;
+       height: 300px;  
+       padding: 5px;      
+       word-wrap: break-word;
+       overflow: auto;">                                    </div>              </td>
+   </tr>
+      
+   <tr>
+     <th style="background-image: linear-gradient(#242323e8, #0f1013c9);font-family: 'Sen', sans-serif;color: aliceblue;font-size: 25px;">Instagram Analysis Chart</th>
+     <th style="background-image: linear-gradient(#242323e8, #0f1013c9);font-family: 'Sen', sans-serif;color: aliceblue;font-size: 25px;">Reddit Analysis Chart</th>
+
+     <th style="background-image: linear-gradient(#242323e8, #0f1013c9);font-family: 'Sen', sans-serif;color: aliceblue;font-size: 25px;">NEWS18 Analysis Chart</th>
+   </tr>
+   <tr>
+     <td> <div class="l1" id="inc" style="
+    background-color:#aaaaaa25;
+       border: 5px solid #0f1013c9;
+       width: 485px;
+       height: 300px;  
+       padding: 5px;      
+       word-wrap: break-word;
+       overflow: auto;">                               </div>                </td>
+
+
+
+<td> <div id="rdc" class="l1" style="      
+  background-color:#aaaaaa25;
+   border: 5px solid #0f1013c9;
+   width: 485px;
+   height: 300px;  
+   padding: 5px;      
+   word-wrap: break-word;
+   overflow: auto;">                                  </div>              </td>
+
+     <td> <div id="nwc" class="l1" style="
+   background-color:#aaaaaa25;
+       border: 5px solid #0f1013c9;
+       width: 485px;
+       height: 300px;  
+       padding: 5px;      
+       word-wrap: break-word;
+       overflow: auto;">                                  </div>              </td>
+   </tr>
+ 
+ 
+ 
+ 
+ 
+ 
+   <tr>
+     <th style="background-image:linear-gradient(#24cae0, #0b7696);font-family: 'Sen', sans-serif;color: aliceblue;font-size: 25px;">Facebook Analysis</th>
+     <th style="background-image:linear-gradient(#24cae0, #0b7696);font-family: 'Sen', sans-serif;color: aliceblue;font-size: 25px;"></th>
+     <th style="background-image:linear-gradient(#24cae0, #0b7696);font-family: 'Sen', sans-serif;color: aliceblue;font-size: 25px;">Twitter Analysis</th>
+   </tr>
+   <tr >
+     <td> <div class="l1" id="roundana" style="height: 240px;font-family: 'Sen', sans-serif; ">
+            {{facebook_Report[0]}} <br>  
+            <u><font size="4px"><b>{{facebook_Report[1]}}        </b></font></u><br>  
+            <font color="#ff6200"> <i>{{facebook_Report[2]}}      </i></font><br>  
+           <u> <font size="4px"> <b>{{facebook_Report[3]}}        </b></font></u><br>  
+            <font color="green">  {{facebook_Report[4]}}          </font><br>  
+            <font color="green">{{facebook_Report[5]}}     </font><br>  
+            <font color="green">{{facebook_Report[6]}} </font><br>  
+            <font color="green">{{facebook_Report[7]}} </font><br>  
+            <font color="green">{{facebook_Report[8]}} </font><br>  
+            <font color="green">{{facebook_Report[9]}} </font><br>  
+            <font color="green">{{facebook_Report[10]}} </font><br>  
+              
+ 
+           
+          </div> </td>
+ 
+ 
+          <td> <div class="l1" id="roundlogo" style="font-family: 'Sen', sans-serif;height: 230px;background-image:url('./static/images/bn1.png');background-size: 100% 100%; ">
+             </div> </td>
+     
+     <td> <div class="l1" id="roundana" style="height: 240px;font-family: 'Sen', sans-serif;">   
+       {{twitter_Report[0]}} <br>  
+            <u><font size="4px"><b>{{twitter_Report[1]}}        </b></font></u><br>  
+            <font color="#ff6200"> <i>{{twitter_Report[2]}}      </i></font><br>  
+           <u> <font size="4px"> <b>{{twitter_Report[3]}}        </b></font></u><br>  
+            <font color="green">  {{twitter_Report[4]}}          </font><br>  
+            <font color="green">{{twitter_Report[5]}}</font><br>  
+            <font color="green">{{twitter_Report[6]}} </font><br>  
+            <font color="green">{{twitter_Report[7]}} </font><br>  
+            <font color="green">{{twitter_Report[8]}} </font><br>  
+            <font color="green">{{twitter_Report[9]}} </font><br>  
+            <font color="green">{{twitter_Report[10]}} </font><br>     </div>  </td>
+   </tr>
+ 
+   <tr>
+     <th style="background-image:linear-gradient(#24cae0, #0b7696);font-family: 'Sen', sans-serif;color: aliceblue;font-size: 25px;">Instagram Analysis</th>
+     
+     <th style="background-image:linear-gradient(#24cae0, #0b7696);font-family: 'Sen', sans-serif;color: aliceblue;font-size: 25px;">Reddit Analysis</th>
+     <th style="background-image:linear-gradient(#24cae0, #0b7696);font-family: 'Sen', sans-serif;color: aliceblue;font-size: 25px;">NEWS18 Analysis</th>
+   </tr>
+   <tr>
+     <td> <div class="l1" id="roundana" style="height: 240px;font-family: 'Sen', sans-serif;">
+            {{instagram_Report[0]}} <br>  
+            <u><font size="4px"><b>{{instagram_Report[1]}}        </b></font></u><br>  
+            <font color="#ff6200"> <i>{{instagram_Report[2]}}      </i></font><br>  
+           <u> <font size="4px"> <b>{{instagram_Report[3]}}        </b></font></u><br>  
+            <font color="green">  {{instagram_Report[4]}}          </font><br>  
+            <font color="green">{{instagram_Report[5]}}     </font><br>  
+            <font color="green">{{instagram_Report[6]}} </font><br>  
+            <font color="green">{{instagram_Report[7]}} </font><br>  
+            <font color="green">{{instagram_Report[8]}} </font><br>  
+            <font color="green">{{instagram_Report[9]}} </font><br>  
+            <font color="green">{{instagram_Report[10]}} </font><br>  
+              
+ 
+           
+          </div> </td>
+     
+ 
+          <td> <div class="l1" id="roundana" style="height: 240px;font-family: 'Sen', sans-serif;">
+           {{reddit_Report[0]}} <br>  
+                <u><font size="4px"><b>{{reddit_Report[1]}}        </b></font></u><br>  
+                <font color="#ff6200"> <i>{{reddit_Report[2]}}      </i></font><br>  
+               <u> <font size="4px"> <b>{{reddit_Report[3]}}        </b></font></u><br>  
+                <font color="green">  {{reddit_Report[4]}}          </font><br>  
+                <font color="green">{{reddit_Report[5]}}</font><br>  
+                <font color="green">{{reddit_Report[6]}} </font><br>  
+                <font color="green">{{reddit_Report[7]}} </font><br>  
+                <font color="green">{{reddit_Report[8]}} </font><br>  
+                <font color="green">{{reddit_Report[9]}} </font><br>  
+                <font color="green">{{reddit_Report[10]}} </font><br>   </div> </td>
+ 
+ 
+ 
+     <td> <div class="l1" id="roundana" style="height: 240px;font-family: 'Sen', sans-serif;">   
+       {{news_Report[0]}} <br>  
+            <u><font size="4px"><b>{{news_Report[1]}}        </b></font></u><br>  
+            <font color="#ff6200"> <i>{{news_Report[2]}}      </i></font><br>  
+           <u> <font size="4px"> <b>{{news_Report[3]}}        </b></font></u><br>  
+            <font color="green">  {{news_Report[4]}}          </font><br>  
+            <font color="green">{{news_Report[5]}}</font><br>  
+            <font color="green">{{news_Report[6]}} </font><br>  
+            <font color="green">{{news_Report[7]}} </font><br>  
+            <font color="green">{{news_Report[8]}} </font><br>  
+            <font color="green">{{news_Report[9]}} </font><br>  
+            <font color="green">{{news_Report[10]}} </font><br>     </div>  </td>
+   </tr>
+ 
+ <tr> <td style="background-color:#8a0606"></td><td>   <div style="text-align: center;background-color:#8a0606;font-family: 'Sen', sans-serif;color: aliceblue;"> <font size="40px"> DATA </font>   </div> </td> <td style="background-color:#8a0606"></td></tr>
+
+   <tr>
+     
+     </tr><tr>
+       <th style="background-image: linear-gradient(#ff0000, #8a0606);font-family: 'Sen', sans-serif;color: aliceblue; ">Facebook Data</th>
+       <th style="background-image: linear-gradient(#ff0000, #8a0606);font-family: 'Sen', sans-serif;color: aliceblue;">Reddit Data</th>
+       <th style="background-image: linear-gradient(#ff0000, #8a0606);font-family: 'Sen', sans-serif;color: aliceblue; ">Twitter Data</th>
+     </tr>
+     <tr>
+       <td><div class="l1" id="roundred" style="background-color:#242422; height: 150px;font-family: 'Special Elite', cursive;word-wrap: break-word;"> <font color="#e6d600"> 
+         {% for item in facebook_data %}
+         {{item}}       <br>
+         {% endfor %} 
+        </font></div> </td>
+       <td> <div class="l1" id="roundred" style="background-color:#242422;height: 150px;font-family: 'Special Elite', cursive;word-wrap: break-word;"> <font color="#e6d600">   
+         {% for item in reddit_data %}
+         {{item}}       <br>
+         {% endfor %}  </font></div> </td>
+       <td> <div class="l1" id="roundred" style="background-color:#242422;height: 150px;font-family: 'Special Elite', cursive;word-wrap: break-word;"> <font color="#e6d600">  
+         {% for item in twitter_data %}
+         {{item}}     <br>  
+         {% endfor %}   </font></div> </td>
+   
+       </tr><tr><td>
+         
+     
+           </td></tr><tr>
+             <th style="background-image: linear-gradient(#ff0000, #8a0606);font-family: 'Sen', sans-serif;color: aliceblue; ">Instagram Data</th>
+             <th></th>
+             <th style="background-image: linear-gradient(#ff0000, #8a0606);font-family: 'Sen', sans-serif;color: aliceblue; ">NEWS18 Data</th>
+           </tr>
+           <tr>
+             <td><div class="l1" id="roundred" style="background-color:#242422; height: 150px;font-family: 'Special Elite', cursive;word-wrap: break-word;"> <font color="#e6d600"> 
+               {% for item in instagram_data %}
+               {{item}}       <br>
+               {% endfor %} 
+               
+              </font></div> </td>
+             <td> <div class="l1" id="roundtw" style="background-color:#242422;height: 50px;font-family: 'Special Elite', cursive;text-align: center; padding-top: 10px;"> <font color=lightblue size=10px>  
+               
+              FOCUS - ON 
+               </font></div><font color="#e6d600"> </font></td>
+             <td> <div class="l1" id="roundred" style="background-color:#242422;height: 150px;font-family: 'Special Elite', cursive;word-wrap: break-word;"> <font color="#e6d600">  
+               {% for item in news_data %}
+               {{item}}     <br>  
+               {% endfor %}   </font></div> </td>
+              
+             </tr><tr><td>
+   </td></tr></tbody></table>
+ 
+     </form>
+     <div id="a"></div>
+     
+       <script type="text/javascript">
+        
+       function printy(fb,rd,tw,ins,nw,ov)
+       {
+         
+       google.charts.load("current", {packages:["corechart"]});
+       google.charts.setOnLoadCallback(facebook);
+       google.charts.setOnLoadCallback(reddit);
+       google.charts.setOnLoadCallback(twitter);
+       google.charts.setOnLoadCallback(instagram);
+       google.charts.setOnLoadCallback(news);
+       google.charts.setOnLoadCallback(overall);
+       function facebook() {
+         var data = google.visualization.arrayToDataTable([
+           ['Analysis',            'value'],
+           ['positive',              fb[0]],
+           ['weakly Positive',       fb[1]],
+           ['Strongly Positive',     fb[2]],
+           ['negative',              fb[3]],
+           ['weakly negative',       fb[4]],
+           ['Strongly negative',     fb[5]],
+           ['Neutral',               fb[6]]
+ 
+         ]);
+ 
+         var options = {
+           title: 'FB Analysis',
+           is3D: true,
+         };
+ 
+         var chart = new google.visualization.PieChart(document.getElementById('fbc'));
+         chart.draw(data, options);
+       }
+       function reddit() {
+         var data = google.visualization.arrayToDataTable([
+           ['Analysis',            'value'],
+           ['positive',              rd[0]],
+           ['weakly Positive',       rd[1]],
+           ['Strongly Positive',     rd[2]],
+           ['negative',              rd[3]],
+           ['weakly negative',       rd[4]],
+           ['Strongly negative',     rd[5]],
+           ['Neutral',               rd[6]]
+         ]);
+         var options = {
+           title: 'Reddit Analysis',
+           is3D: true,
+         };
+         var chart = new google.visualization.PieChart(document.getElementById('rdc'));
+         chart.draw(data, options);
+       }
+ 
+       function twitter() {
+         var data = google.visualization.arrayToDataTable([
+           ['Analysis',            'value'],
+           ['positive',              tw[0]],
+           ['weakly Positive',       tw[1]],
+           ['Strongly Positive',     tw[2]],
+           ['negative',              tw[3]],
+           ['weakly negative',       tw[4]],
+           ['Strongly negative',     tw[5]],
+           ['Neutral',               tw[6]]
+ 
+         ]);
+ 
+         var options = {
+           title: 'Twitter Analysis',
+           is3D: true,
+         };
+        
+         var chart = new google.visualization.PieChart(document.getElementById("twc"));
+         chart.draw(data, options);
+ 
+       }
+ 
+       function instagram() {
+         var data = google.visualization.arrayToDataTable([
+           ['Analysis',            'value'],
+           ['positive',              ins[0]],
+           ['weakly Positive',       ins[1]],
+           ['Strongly Positive',     ins[2]],
+           ['negative',              ins[3]],
+           ['weakly negative',       ins[4]],
+           ['Strongly negative',     ins[5]],
+           ['Neutral',               ins[6]]
+ 
+         ]);
+ 
+         var options = {
+           title: 'Instagram Analysis',
+           is3D: true,
+         };
+        
+         var chart = new google.visualization.PieChart(document.getElementById("inc"));
+         chart.draw(data, options);
+ 
+       }
+ 
+       function news() {
+         var data = google.visualization.arrayToDataTable([
+           ['Analysis',            'value'],
+           ['positive',              nw[0]],
+           ['weakly Positive',       nw[1]],
+           ['Strongly Positive',     nw[2]],
+           ['negative',              nw[3]],
+           ['weakly negative',       nw[4]],
+           ['Strongly negative',     nw[5]],
+           ['Neutral',               nw[6]]
+ 
+         ]);
+ 
+         var options = {
+           title: 'NEWS18 Analysis',
+           is3D: true,
+         };
+        
+         var chart = new google.visualization.PieChart(document.getElementById("nwc"));
+         chart.draw(data, options);
+ 
+       }
+ 
+       function overall() {
+         var data = google.visualization.arrayToDataTable([
+           ['Analysis',            'value'],
+           ['positive',              ov[0]],
+           ['weakly Positive',       ov[1]],
+           ['Strongly Positive',     ov[2]],
+           ['negative',              ov[3]],
+           ['weakly negative',       ov[4]],
+           ['Strongly negative',     ov[5]],
+           ['Neutral',               ov[6]]
+ 
+         ]);
+ 
+         var options = {
+           title: 'Overall Analysis',
+           is3D: true,
+         };
+        
+         var chart = new google.visualization.PieChart(document.getElementById("overall"));
+         chart.draw(data, options);
+ 
+       }
+     }
+       </script>
+       
+ 
+   
+ </body></html>
